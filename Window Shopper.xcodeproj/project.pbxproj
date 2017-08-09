@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		F340FED41F39780C00841EA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F340FED31F39780C00841EA3 /* AppDelegate.swift */; };
-		F340FED61F39780C00841EA3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F340FED51F39780C00841EA3 /* ViewController.swift */; };
+		F340FED61F39780C00841EA3 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F340FED51F39780C00841EA3 /* MainVC.swift */; };
 		F340FED91F39780C00841EA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F340FED71F39780C00841EA3 /* Main.storyboard */; };
 		F340FEDB1F39780C00841EA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F340FEDA1F39780C00841EA3 /* Assets.xcassets */; };
 		F340FEDE1F39780C00841EA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F340FEDC1F39780C00841EA3 /* LaunchScreen.storyboard */; };
+		F3DEA8591F39F304008E359A /* CurrencyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DEA8581F39F304008E359A /* CurrencyTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F340FED01F39780C00841EA3 /* Window Shopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Window Shopper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F340FED31F39780C00841EA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F340FED51F39780C00841EA3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F340FED51F39780C00841EA3 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		F340FED81F39780C00841EA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F340FEDA1F39780C00841EA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F340FEDD1F39780C00841EA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F340FEDF1F39780C00841EA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3DEA8581F39F304008E359A /* CurrencyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,31 @@
 		F340FED21F39780C00841EA3 /* Window Shopper */ = {
 			isa = PBXGroup;
 			children = (
+				F3DEA8571F39F2E1008E359A /* Views */,
+				F3DEA8561F39F177008E359A /* Controller */,
 				F340FED31F39780C00841EA3 /* AppDelegate.swift */,
-				F340FED51F39780C00841EA3 /* ViewController.swift */,
 				F340FED71F39780C00841EA3 /* Main.storyboard */,
 				F340FEDA1F39780C00841EA3 /* Assets.xcassets */,
 				F340FEDC1F39780C00841EA3 /* LaunchScreen.storyboard */,
 				F340FEDF1F39780C00841EA3 /* Info.plist */,
 			);
 			path = "Window Shopper";
+			sourceTree = "<group>";
+		};
+		F3DEA8561F39F177008E359A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F340FED51F39780C00841EA3 /* MainVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F3DEA8571F39F2E1008E359A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F3DEA8581F39F304008E359A /* CurrencyTextField.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +154,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F340FED61F39780C00841EA3 /* ViewController.swift in Sources */,
+				F3DEA8591F39F304008E359A /* CurrencyTextField.swift in Sources */,
+				F340FED61F39780C00841EA3 /* MainVC.swift in Sources */,
 				F340FED41F39780C00841EA3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
